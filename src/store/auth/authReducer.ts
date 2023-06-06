@@ -79,10 +79,10 @@ export const authReducer = createSlice({
         error: action.payload
       }
     }),
-    logOut: (): AuthState => initialState,
+    logOutSuccess: (): AuthState => initialState,
   }
 })
 
-export const {logOut, loginFailure, loginStart, loginSuccess, profileFailure, profileStart, profileSuccess} = authReducer.actions;
+export const {logOutSuccess, loginFailure, loginStart, loginSuccess, profileFailure, profileStart, profileSuccess} = authReducer.actions;
 
 export default authReducer.reducer
